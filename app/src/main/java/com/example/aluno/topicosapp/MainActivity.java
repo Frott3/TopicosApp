@@ -14,10 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnTela2;
     private Button btnTela3;
 
-    private EditText num1, num2, result;
-    private Button btSomar, btSubtrair, btDividir, btMultiplicar;
 
-    double n1, n2, resultado;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -47,30 +44,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Pegando os valores do usuário
-        num1    = (EditText) findViewById(R.id.num1);
-        num2    = (EditText) findViewById(R.id.num2);
-        result  = (EditText) findViewById(R.id.result);
 
-        btSomar       = (Button)   findViewById(R.id.btSomar);
-        btSubtrair    = (Button)   findViewById(R.id.btSubtrair);
-        btDividir     = (Button)   findViewById(R.id.btDividir);
-        btMultiplicar = (Button)   findViewById(R.id.btMultiplicar);
-
-        //BOTÃO SOMAR
-        btSomar.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-
-                n1 = Double.parseDouble(num1.getText().toString());
-                n2 = Double.parseDouble(num2.getText().toString());
-
-                resultado = n1+n2;
-
-
-                result.setText(String.valueOf(resultado));
-            }
-        });
 
 
 
